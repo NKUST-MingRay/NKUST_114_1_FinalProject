@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>河川水位測站查詢</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>河川水位測站基本資料查詢</h1>
+    <p class="desc">輸入關鍵字（測站名稱 observatoryname）後搜尋。</p>
+
+    <section class="search">
+      <input id="keyword" type="text" placeholder="例如：大甲、后里、溪…" />
+      <button id="btnSearch">搜尋</button>
+      <button id="btnClear" class="secondary">清除</button>
+    </section>
+
+    <section class="status" id="status"></section>
+
+    <section class="table-wrap">
+      <table id="table">
+        <thead>
+          <tr>
+            <th>測站名稱</th>
+            <th>測站代碼</th>
+            <th>河川名稱</th>
+            <th>位置地址</th>
+            <th>狀態</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
